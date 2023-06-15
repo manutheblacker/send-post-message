@@ -7,13 +7,13 @@
 <body>
   <script>
       alert('hello world');
-      window.coco = "ddd";
+      window.parent.coco = "ddd";
       var values = {
         "type" : "morning",
         "vie" : "ye"
       }
     
-      window.postMessage( values, "https://manutheblacker.github.io/send-post-message" )
+      window.parent.postMessage( values, "https://manutheblacker.github.io/send-post-message" )
   </script>
 </body>
 </html>
