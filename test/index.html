@@ -8,7 +8,12 @@
   <script>
       alert('hello world');
       window.coco = "ddd";
-      window.postMessage('bonjour', location.origin)
+      var values = {
+        "type" : "morning",
+        "vie" : "ye"
+      }
+      values = JSON.stringify(values)
+      window.postMessage( values, location.origin)
   </script>
 </body>
 </html>
