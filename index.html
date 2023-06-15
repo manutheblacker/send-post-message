@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <iframe allowfullscreen="true" sandbox="allow-scripts, allow-storage-access-by-user-activation, allow-scripts" height="500" width="500" src="http://localhost:8082/iframe-tester/test"></iframe>
+    <script>
+        var hello = "good";
+        window.addEventListener(
+            "message",
+            (event) => {
+               console.log(event.origin, event.data)
+                // …
+            },
+            false
+        );
+
+    </script>
+</body>
+</html>
